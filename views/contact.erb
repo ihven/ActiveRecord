@@ -45,5 +45,9 @@
     <br/> 
  </div>
  <button type="submit" class="btn btn-danger btn-sm">SAVE</button>
-	
+	<div>
+			      <%if(@error_val) then %>
+			          <div class="alert alert-danger" style="color:red; font-weight:900"><%=@error_val%></div>
+			      <% end %>
+	</div>
 </form>
