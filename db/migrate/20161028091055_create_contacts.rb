@@ -1,13 +1,13 @@
 class CreateContacts < ActiveRecord::Migration
   def change
      create_table:contacts  do |contact| 
-                  contac.text:tname
-				  contac.text:position
-				  contac.text:company
-				  contac.text:adress
-			      contac.text:currency
-			      contac.text:email
-			      contac.text:additional_information
+                  contact.text:tname
+				  contact.text:position
+				  contact.text:company
+				  contact.text:adress
+			      contact.text:currency
+			      contact.text:email
+			      contact.text:additional_information
 				  contact.timestamps
 	 end  
   end
