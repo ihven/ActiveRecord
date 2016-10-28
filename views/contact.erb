@@ -3,35 +3,35 @@
  
  <div class="form-group">
 	<label>Enter your full name:</label><br/>
-	<input name = "name" type="text" placeholder = "Enter your full name" style="border-color:red; width:300px" required>
+	<input name = "contact[name]" type="text" placeholder = "Enter your full name" style="border-color:red; width:300px" required>
 	<br/> 
  </div>
  
  <div class="form-group">
     <label>Enter your position:</label><br/>
-	<input name = "position" type="text" placeholder = "Enter your position" style="border-color:red; width:300px" required>
+	<input name = "contact[position]" type="text" placeholder = "Enter your position" style="border-color:red; width:300px" required>
 	 <br/> 
  </div>
  
  <div class="form-group">
     <label>Enter company:</label><br/>
-	<input name = "company" type="text" placeholder = "Enter company"style="border-color:red; width:300px" required>
+	<input name = "contact[company]" type="text" placeholder = "Enter company"style="border-color:red; width:300px" required>
 	 <br/> 
  </div>
  
  <div class="form-group">
     <label>Enter adress of company:</label><br/>
-	<input name = "adress" type="text" placeholder = "Enter adress of company" style="border-color:red; width:300px" required>
+	<input name = "contact[adress]" type="text" placeholder = "Enter adress of company" style="border-color:red; width:300px" required>
 	<br/> 
  </div>
  
  <div class="form-group">
     <label>Enter e-mail:</label><br/>
-	<input name = "email" type="text" placeholder = "Enter e-mail" style="border-color:red; width:150px" required>
+	<input name = "contact[email]" type="text" placeholder = "Enter e-mail" style="border-color:red; width:150px" required>
  </div>
  
  <label>CURRENCY:</label>
- <select  name="currency" class="selectpicker" style="border-color:red; font-weight:700" required>
+ <select  name="contact[currency]" class="selectpicker" style="border-color:red; font-weight:700" required>
   <option>CURRENCY</option>
     <option class="selectpicker" value="UAH" style="color:red; font-weight:700">UAH</option>
     <option class="selectpicker" value="USD" style="color:red; font-weight:700">USD</option>
@@ -41,7 +41,7 @@
  
  <div class="form-group">
     <label>Enter additional information:</label><br/>
-	<textarea name = "additional_information " type="textarea" placeholder = "Enter iformation" style="border-color:red" cols ="75" rows="5" required></textarea>
+	<textarea name = "contact[additional_information]" type="textarea" placeholder = "Enter iformation" style="border-color:red" cols ="75" rows="5" required></textarea>
     <br/> 
  </div>
  <button type="submit" class="btn btn-danger btn-sm">SAVE</button>
