@@ -1,9 +1,21 @@
-<h3>him/her link:</h3>
+<h4><label style="color:red; font-weight:750">him/her link:</label></h4>
 
-<div class="form-group">
-    <label>contact:</label><br/>
-	<%=@contact.name%><br/>
-	<%=@contact.position%><br/>
-	<%=@contact.company%><br/>
-	
+<div class="form-group" style="color:black; font-weight: 750">
+    <label style="color:black; font-weight: 450"><%=@contact.name%></label><br/>
+	<label style="color:black; font-weight: 450"><%=@contact.position%></label><br/>
+	<label style="color:black; font-weight: 450"><%=@contact.company%></label><br/>
+</div>
+
+ <h5><label style="color:red; font-weight:750">You can add comment:</label></h5>
+ <div class="form-group" style="color:black; font-weight: 750">
+ <form action = "/list" method = "POST" role = "form">
+  <textarea name = "comment" placeholder="add your comment please" style="border-color:red" cols ="75" rows="5" required></textarea></br>
+ 
+  <h5><label style="color:red; font-weight:750">Introduce name:</label></h5>
+  <input name = "author" placeholder="Enter your name" style="border-color:red" required></br>
+  
+  </br>
+  <button type="submit" class="btn btn-danger btn-sm">SAVE</button>
+</form>
+ 
  </div>

@@ -18,6 +18,9 @@ before do
    @contacts = Contact.all
 end
 
+class Comment < ActiveRecord::Base
+end
+
 
 get '/' do
   erb "You can add new contact"
