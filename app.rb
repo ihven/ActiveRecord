@@ -14,9 +14,16 @@ class Contact < ActiveRecord::Base
 	  validates :company, presence:true
 end
 
+before do
+   @contacts = Contact.all
+end
+
 
 get '/' do
   erb "You can add new contact"
+end
+get '/list' do
+  erb :index
 end
 
 get '/contacts' do
