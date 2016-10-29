@@ -30,6 +30,11 @@ get '/contacts' do
     erb :contact
 end
 
+get '/list/:id' do
+  @contact = Contact.find(params[:id])
+  erb :link
+end
+
 post '/contacts' do
                  # @name=params[:name]
 				 # @position=params[:position]
