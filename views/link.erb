@@ -8,13 +8,13 @@
 
  <h5><label style="color:red; font-weight:750">You can add comment:</label></h5>
  <div class="form-group" style="color:black; font-weight: 750">
- <form action = "/list" method = "POST" role = "form">
-  <textarea name = "comment" placeholder="add your comment please" style="border-color:red" cols ="75" rows="5" required></textarea></br>
+ <form action = "/list/<%=@contact.id%>" method = "POST" role = "form">
+  <textarea name = "comment[comment]" placeholder="add your comment please" style="border-color:red" cols ="75" rows="5" required></textarea></br>
  
   <h5><label style="color:red; font-weight:750">Introduce name:</label></h5>
-  <input name = "author" placeholder="Enter your name" style="border-color:red" required></br>
-  
+  <input name = "comment[author]" placeholder="Enter your name" style="border-color:red" required></br>
   </br>
+  
   <button type="submit" class="btn btn-danger btn-sm">SAVE</button>
 </form>
  

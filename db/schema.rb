@@ -11,27 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161029140748) do
+ActiveRecord::Schema.define(version: 20161029165519) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "author"
     t.text     "comment"
-    t.integer  "com_id"
-    t.date     "attached"
+    t.datetime "addeted"
+    t.integer  "comment_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "contacts", force: :cascade do |t|
-    t.text     "name"
-    t.text     "position"
-    t.text     "company"
-    t.text     "adress"
-    t.text     "currency"
-    t.text     "email"
-    t.text     "additional_information"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.text "name"
+    t.text "position"
+    t.text "company"
+    t.text "adress"
+    t.text "currency"
+    t.text "email"
+    t.text "additional_information"
   end
 
 end

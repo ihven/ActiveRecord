@@ -1,4 +1,4 @@
-#encoding: utf-8
+#encoding: CP866
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/activerecord'
@@ -72,3 +72,12 @@ post '/contacts' do
 					erb :contact
     			 end
  end
+ 
+ post '/list/:id' do
+   
+   comment = Comment.new(params[:comment]) 
+   comment.addeted = DateTime.current
+   comment.comment_id = params[:id]
+   comment.save
+   redirect to "/list"
+end
