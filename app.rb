@@ -35,6 +35,7 @@ end
 
 get '/list/:id' do
   @contact = Contact.find(params[:id])
+  @comment = Comment.where("comment_id = ?", params[:id])
   erb :link
 end
 

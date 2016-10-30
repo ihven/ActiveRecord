@@ -6,6 +6,16 @@
 	<label style="color:black; font-weight: 450"><%=@contact.company%></label><br/>
 </div>
 
+<h5><label style="color:red; font-weight:650">Comments about him(her):</label></h5>
+<div class="form-group" style="color:black; font-weight: 100">
+   <%@comment.each do |com|%> 
+		<label style="color:black; font-weight: 100"><%=com.comment%></label><br/>
+        <label style="color:black; font-weight: 150"><%=com.author%>. addeted at:<%=com.addeted%></label><br/>
+   <%end%>
+   
+</div>
+
+
  <h5><label style="color:red; font-weight:750">You can add comment:</label></h5>
  <div class="form-group" style="color:black; font-weight: 750">
  <form action = "/list/<%=@contact.id%>" method = "POST" role = "form">
